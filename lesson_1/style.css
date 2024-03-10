@@ -1,0 +1,25 @@
+body{
+    font-family: "Anta", sans-serif;
+    padding: 50px;
+}
+.bg-red{
+background-color: red;
+padding: 5px;
+}
+
+.items-center{
+    text-align: center;
+}
+
+h1{
+text-align: center;
+}
+
+.red-color{
+    color: red;
+}
+
+pre{
+    background-color: rgb(218, 218, 218);
+    padding: 25px;
+}
