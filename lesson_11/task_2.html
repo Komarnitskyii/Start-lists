@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 36px;
+      }
+      .modal-view {
+        background-color: white;
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+          0 8px 10px -6px rgb(0 0 0 / 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: 15px;
+        border-radius: 12px;
+      }
+      .black-bg {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sit
+        earum doloribus id ullam explicabo libero et exercitationem, placeat
+        dolorum laudantium quisquam quasi eveniet maxime voluptate harum
+        molestiae error dolorem aliquid quod ab facere soluta animi neque?
+        Blanditiis nam sequi ex assumenda eum, voluptatibus laboriosam quod
+        excepturi harum enim accusantium.
+      </p>
+      <div class="modal-view">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, velit?
+        </p>
+      </div>
+      <div class="black-bg"></div>
+    </div>
+  </body>
+</html>

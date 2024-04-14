@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      form {
+        border: solid black 1px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 400px;
+        padding: 15px 20px;
+        border-radius: 7px;
+      }
+      .form-group {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" />
+      </div>
+      <div>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" />
+      </div>
+      <div>
+        <label for="userMessage">Message:</label>
+        <input type="text" id="userMessage" />
+      </div>
+
+      <div>
+        <label for="news" class="form-group">
+          <p>Subscribe</p>
+          <input type="checkbox" id="news" />
+        </label>
+      </div>
+
+      <div>
+        <p>Gender</p>
+        <input type="radio" value="male" id="gender1" name="gender" />
+        <label for="gender1">Male</label> <br />
+        <input type="radio" value="female" id="gender2" name="gender" />
+        <label for="gender2">Female</label>
+      </div>
+      <div>
+        <input type="submit" value="Send your message" />
+      </div>
+    </form>
+  </body>
+</html>

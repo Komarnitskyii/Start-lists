@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: rgb(95, 95, 95);
+        padding: 10px 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      ul {
+        text-align: center;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 15px;
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(235, 235, 235);
+        font-size: 18px;
+      }
+
+      .second li {
+        display: block;
+      }
+
+      .second {
+        position: absolute;
+        left: -10px;
+        display: none;
+        background-color: rgb(95, 95, 95);
+      }
+
+      .main {
+        position: relative;
+      }
+
+      .main:hover .second {
+        display: block;
+      }
+
+      .main:hover {
+        padding-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Mac</a></li>
+          <li><a href="">iPad</a></li>
+          <li class="main">
+            <a href="">iPhone</a>
+            <ul class="second">
+              <li>1</li>
+              <li>1</li>
+              <li>1</li>
+            </ul>
+          </li>
+          <li><a href="">Watch</a></li>
+          <li><a href="">AirPods</a></li>
+          <li><a href="">TV і Дім</a></li>
+          <li><a href="">Сервіси</a></li>
+          <li><a href="">Підтримка</a></li>
+          <li><a href="">Де купити</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

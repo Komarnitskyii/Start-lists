@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      .main {
+        width: 250px;
+        height: 250px;
+        border: solid red 1px;
+        background: green;
+        padding: 15px;
+        overflow-y: scroll;
+      }
+
+      #first {
+        margin-top: 800px;
+      }
+
+      .main-item {
+        width: 100px;
+        height: 100px;
+
+        background-color: blue;
+        margin-left: 50%;
+        margin-top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      p {
+        background-color: rgba(144, 144, 144, 0.5);
+        padding: 5px;
+      }
+
+      .main:hover p {
+        background-color: rgba(144, 144, 144, 1);
+      }
+
+      .main:hover .main-item {
+        background-color: red;
+      }
+
+      .main:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a href="page_2.html">Перейти на 2 сторінку</a>
+    </h1>
+    <div class="main">
+      <div class="main-item">
+        <a href="#first">Перейти на до наступного div</a>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit quod
+        recusandae eius error expedita quos laboriosam, nobis magnam ducimus
+        neque mollitia quibusdam laborum cumque aliquid. Ab, placeat doloribus
+        consectetur dolore repellendus reiciendis atque amet nobis perferendis?
+        Laborum iste officia dolores eius animi. Quaerat tenetur consequatur
+        nesciunt earum quo autem neque perspiciatis, eum tempore repellendus
+        pariatur dolore dolor facilis a quisquam ab, quibusdam voluptas illum
+        debitis unde sapiente, dignissimos consequuntur fugit. Delectus est
+        repellendus, quae consequatur maxime saepe corporis recusandae a
+        voluptatibus repellat at cupiditate accusamus illum voluptatem quas
+        tempora pariatur minima eum ex blanditiis voluptas id earum similique
+        dolorum?
+      </p>
+    </div>
+    <div class="main" id="first">
+      <div class="main-item"></div>
+    </div>
+  </body>
+</html>
