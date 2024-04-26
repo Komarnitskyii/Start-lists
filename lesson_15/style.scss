@@ -1,0 +1,78 @@
+@import "nulling_css.scss";
+
+$base-text-color: #191619;
+$second-focus-color: #0cbbc7;
+$unfocus-text-color: #676767;
+$light-blue: #edfeff;
+
+%outlineButton {
+  padding: 10px 50px;
+  color: $second-focus-color;
+  border: solid $second-focus-color 1px;
+  background: none;
+}
+
+%lineButton {
+  padding: 10px 50px;
+  color: $second-focus-color;
+  border: solid $second-focus-color 1px;
+  background: $second-focus-color;
+  color: white;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 116px;
+    ul {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      li {
+        list-style: none;
+        font-size: 14px;
+        color: $base-text-color;
+        font-weight: 500;
+
+        button {
+          @extend %outlineButton;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 550px;
+  background-image: url(./img/bg-img.png);
+  background-color: $light-blue;
+  padding-top: 50px;
+  flex-direction: column;
+  h1 {
+    font-size: 44px;
+    font-weight: 900;
+    width: 900px;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    width: 447px;
+    color: $unfocus-text-color;
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    margin-top: 30px;
+    @extend %lineButton;
+    margin-bottom: 56px;
+  }
+}
